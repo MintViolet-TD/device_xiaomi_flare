@@ -21,7 +21,7 @@ PRODUCT_MANUFACTURER := xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-INFINITY_MAINTAINER := KSN/MintVioletAurora
+INFINITY_MAINTAINER := KSN & MintVioletAurora
 TARGET_HAS_UDFPS := false
 WITH_GAPPS := false
 

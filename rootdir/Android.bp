@@ -25,13 +25,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "factory_init.connectivity.rc",
-    src: "etc/factory_init.connectivity.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
     name: "factory_init.project.rc",
     src: "etc/factory_init.project.rc",
     sub_dir: "init/hw",
@@ -74,27 +67,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.connectivity.rc",
-    src: "etc/init.connectivity.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "init.mt6768.rc",
-    src: "etc/init.mt6768.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "init.mt6768.usb.rc",
-    src: "etc/init.mt6768.usb.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
     name: "init.mt8786.rc",
     src: "etc/init.mt8786.rc",
     sub_dir: "init/hw",
@@ -111,13 +83,6 @@ prebuilt_etc {
 prebuilt_etc {
     name: "init.project.rc",
     src: "etc/init.project.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "init.sensor_1_0.rc",
-    src: "etc/init.sensor_1_0.rc",
     sub_dir: "init/hw",
     vendor: true,
 }
@@ -171,9 +136,3 @@ prebuilt_etc {
     vendor: true,
 }
 
-// fstab
-prebuilt_etc {
-    name: "fstab.mt6768",
-    src: "etc/fstab.mt6768",
-    vendor: true,
-}

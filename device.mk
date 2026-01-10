@@ -9,6 +9,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
+# Inherit from mt6768-common
+$(call inherit-product, device/xiaomi/mt6768-common/BoardConfigCommon.mk)
+
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl \
     android.hardware.boot@1.2-impl.recovery \
@@ -143,3 +146,12 @@ TARGET_SCREEN_HEIGHT := 1340
 TARGET_SCREEN_WIDTH := 800
 TARGET_SCREEN_DENSITY := 179
 
+
+# Fix CTS MediaProjection error
+DISABLE_CTS_TESTS := true
+
+
+# No biometrics for flare tablet
+TARGET_SUPPORTS_FINGERPRINT := false
+TARGET_SUPPORTS_FACE_UNLOCK := false
+BOARD_USES_FACE_UNLOCK := false
